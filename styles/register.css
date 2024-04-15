@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: #1f1f1f;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+/*register*/
+.register{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 15px;
+    width: 55%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 50px;
+}
+.register form{
+    width: 80%;
+    height: 500px;
+    padding-top: 50px;
+    color: white;
+}
+.register form h2{
+    text-align: center;
+    color: white;
+}
+#errorTitulo{
+    color: red;
+    display: none;
+}
+.register div{
+    margin-top: 50px;
+}
+.register div input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    border-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+.register div textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    height: 130px;
+    background-color: transparent;
+    border-color: white;
+    max-height: 130px;
+    max-width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: white;
+}
+.register div label{
+    display: block;
+}
+.register div input:focus {
+    outline: none;
+    border-width: 3px ;
+}
+.register div textarea:focus {
+    outline: none;
+    border-width: 3px ;
+}
+#submit{
+    width: 100%;
+    margin-top: 50px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:  #ffc107;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+    font-size: 15px;
+}
+ /*Modal Window*/
+ .modal {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    text-align: center;
+    z-index: 2;
+}
+#myModalCheck .modal-content i{
+    color: green;
+}
+#myModalWrong .modal-content i{
+    color: red;
+}
+
+@media (max-width: 600px) {
+
+    .register{
+        padding-bottom: 50px;
+    }
+}

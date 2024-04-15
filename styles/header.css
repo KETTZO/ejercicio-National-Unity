@@ -1,0 +1,96 @@
+/*HEADER*/
+.topnav {
+    background-color: #1f1f1f;
+    overflow: hidden;
+    width: 55%;
+    margin: 0 auto;
+}
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: 0.3s;
+    padding-right: 0;
+    
+}
+.topnav span{
+    float: left;
+    color: #ffc107;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding-left: 0;
+}
+.topnav a:hover {
+
+    color: #ffc107;
+    transition: 0.3s;
+}
+/*dropMenu*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.dropdown {
+    display: none;
+    animation-name: fadeIn;
+    background-color: #333;
+    animation-duration: 0.5s;
+}
+.dropdown a {
+    float: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.dropdown a:hover {
+    color: #ffc107;
+    transition: 0.3s;
+}
+.icon {
+    display: none;
+}
+.dropdown.show {
+    display: block;
+}
+@media (max-width: 1530px) {
+    .topnav{
+        width: 80%;
+    }
+}
+@media (max-width: 1052px) {
+    .topnav{
+        width: 100%;
+    }
+    .topnav a{
+        padding: 14px 16px;
+    }
+    .topnav span{
+        padding: 14px 16px;
+    }
+}
+@media (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .dropdown a {
+        display: block;
+    }
+}
+
+@media (min-width: 601px) {
+    .dropdown a {
+        display: none;
+    }
+}
